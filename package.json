@@ -1,0 +1,22 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sephoro/elen4010-lab3.git"
+  },
+  "author": "Elias Sepuru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sephoro/elen4010-lab3/issues"
+  },
+  "homepage": "https://github.com/Sephoro/elen4010-lab3#readme",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
