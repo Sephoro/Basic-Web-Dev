@@ -15,7 +15,7 @@
   		padding: 8px;
 		font-family: sans-serif;
 	}
-	#heading {
+	#heading{
 		text-align: left;
 		text-decoration-color: rgba(0, 0, 0, 0.952);
 		font-family: sans-serif;
@@ -35,13 +35,26 @@
 		color: white;
 	
 	}
-	#DBadd {
+	#DBadd,  #selection {
 		border: 1px solid black;
   		text-align: center;
   		padding: 10px;
 		font-family: sans-serif;
 		background-color:  #8f971f;
 		color: white;	
+	}
+	#authorName{
+		border: 1px solid gold;
+		font-size: 34px;
+		text-align: center;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	}
+	#authorTitle {
+		background-position-y: 32px;
+		text-align: center;
+		font-size: 40px;
+		text-decoration-color: rgba(0, 0, 0, 0.952);
+		font-family: sans-serif;
 	}
 	#DBadd:hover { background: #dae633; }
 	#add-student:hover {background: #dae633; }

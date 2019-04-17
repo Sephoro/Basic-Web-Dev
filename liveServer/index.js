@@ -1,38 +1,18 @@
 'use strict'
+let express = require('express')
+let app = express()
+let path = require('path')
 
-let addButton = document.getElementById('addButton')
-addButton.addEventListener('click', addName, false)
+// loading routers
+let mainRouter = require('./mainRoutes.js')
+let classRouter = require('./classRoutes')
 
-function addName () {
-  let par = document.createElement('li')
-  let textVal = document.getElementById('name').value
-  let text = document.createTextNode(textVal)
-  par.appendChild(text)
-  let st = document.getElementById('stlist')
-  st.appendChild(par)
-}
+// mounting routers
+app.use('/', mainRouter)
+app.use('/class', classRouter)
 
-// Adding Courses
-let CourseList = ['ELEN4012', 'MECN4020', 'ELEN4016']
+// Load Styler
+app.use(express.static(path.join(__dirname, 'views', 'class', 'public', 'css', 'styler.css')))
 
-let count = 5
-
-let addCButton = document.getElementById('addcourse')
-addCButton.addEventListener('click', addCourse, false)
-
-function addCourse () {
-  let para_ = document.createElement('p')
-  let text = document.createTextNode(String(count) + '. ' + CourseList[(count - 5) % 3])
-  count++
-  para_.appendChild(text)
-  let c = document.getElementById('courseList')
-  c.appendChild(para_)
-}
-// Deleting Courses
-let deleteC = document.getElementById('delete')
-deleteC.addEventListener('click', deleteCourse, false)
-
-function deleteCourse () {
-  let course = document.getElementById('elen4006')
-  course.parentNode.removeChild(course)
-}
+app.listen(3000)
+console.log('Express server running port 3000')

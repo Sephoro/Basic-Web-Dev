@@ -5,11 +5,20 @@
 	<meta charset="utf-8" />
 </head>
 
-<link rel="stylesheet" type="text/css" href="styler.css">
+<link rel="stylesheet" type="text/css" href="public/css/styler.css">
 
 <body>
 	
-	<h1 id = "heading">Class List</h1> <input type = "text" id = "search-text" placeholder="Search...">
+	<h1 id = "heading">Class List</h1> <input type = "text" id = "search-text" placeholder="Search..."> by
+    <select id ="selection">
+		<option value = " "></option>
+		<option value = "name-search">Name</option>
+		<option value = "st-search">Student Number</option>
+		<option value = "yos-search">YOS</option>
+		<option value = "electives-search">Electives</option>
+
+	</select>
+	
 	<br></br>
 	<div id = "students"> </div>
 	<table id = "st-table">
