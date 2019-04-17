@@ -1,0 +1,48 @@
+
+	table {
+  		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  		border-collapse: collapse;
+  		width: 50%;
+		}
+	td, th {
+ 		border: 1px solid #33b3ff;
+  		text-align: left;
+  		padding: 8px;
+	}
+	#search-text {
+        border: 1px solid #8f971f;
+  		text-align: left;
+  		padding: 8px;
+		font-family: sans-serif;
+	}
+	#heading {
+		text-align: left;
+		text-decoration-color: rgba(0, 0, 0, 0.952);
+		font-family: sans-serif;
+	}
+	#new-student-text, #new-yos, #new-st-number, #new-electives{
+		border: 1px solid #8f971f;
+  		text-align: left;
+  		padding: 10px;
+		font-family: sans-serif;
+	}
+	#add-student{
+		border: 1px solid black;
+  		text-align: center;
+  		padding: 10px;
+		font-family: sans-serif;
+		background-color:  #8f971f;
+		color: white;
+	
+	}
+	#DBadd {
+		border: 1px solid black;
+  		text-align: center;
+  		padding: 10px;
+		font-family: sans-serif;
+		background-color:  #8f971f;
+		color: white;	
+	}
+	#DBadd:hover { background: #dae633; }
+	#add-student:hover {background: #dae633; }
+

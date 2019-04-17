@@ -5,14 +5,27 @@
 	<meta charset="utf-8" />
 </head>
 
+<link rel="stylesheet" type="text/css" href="styler.css">
+
 <body>
 	
 	<h1 id = "heading">Class List</h1> <input type = "text" id = "search-text" placeholder="Search...">
-	
+	<br></br>
 	<div id = "students"> </div>
-
+	<table id = "st-table">
+		
+			<th>Name</th>
+			<th>Student Number</th>
+			<th>YOS</th>
+			<th>Electives</th>
+		
+	</table>
+    <br></br>
 	<input type = "text" id = "new-student-text" placeholder = "Name">
-	<button id="add-student">Add New Student</button> or <button id= "DBadd">Add from Database</button>
+	<input type = "text" id = "new-st-number" placeholder="Student Number">
+	<input type = "text" id = "new-yos" placeholder="YOS">
+	<input type = "text" id = "new-electives" placeholder="Elective1, Elective2, ...">
+	<button  href= "#" id="add-student">Add New Student</button> or <button id= "DBadd">Add from Database</button>
 	<script src="class-list-app.js">
     </script>
 </body>
