@@ -1,25 +1,4 @@
-/* let button = document.getElementById('addButton')
-
-button.addEventListener('click', function () {
-  let paragraph = document.createElement('p')
-  let text = document.createTextNode('This is a student')
-  paragraph.appendChild(text)
-  let students = document.getElementById('studentList')
-  students.appendChild(paragraph)
-}, false)
-
-let button2 = document.getElementById('headerButton')
-
-button2.addEventListener('click', headerChange, false)
-
-button4.addEventListener('click', headerChange, false)
-
-function headerChange () {
-  let heading = document.getElementById('heading')
-  heading.innerHTML = 'EIE Staff: '
-}
-
-*/
+'use strict'
 
 let addButton = document.getElementById('addButton')
 addButton.addEventListener('click', addName, false)
