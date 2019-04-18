@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // mounting routers
 
 app.use('/', mainRouter)
-app.use('/todo', todoRouter)
+app.use('/class', todoRouter)
 
 // Load Styler
-app.use(express.static(path.join(__dirname, 'views', 'class', 'public', 'css', 'styler.css')))
+app.use('/cdn', express.static('public'))
 
 app.listen(3000)
 console.log('Express server running port 3000')
