@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sephoro/elen4010-lab3#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "4.16.4"
   }
 }

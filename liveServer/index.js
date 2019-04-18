@@ -2,14 +2,19 @@
 let express = require('express')
 let app = express()
 let path = require('path')
+let bodyParser = require('body-parser')
 
 // loading routers
 let mainRouter = require('./mainRoutes.js')
-let classRouter = require('./classRoutes')
+let todoRouter = require('./classRoutes')
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // mounting routers
+
 app.use('/', mainRouter)
-app.use('/class', classRouter)
+app.use('/todo', todoRouter)
 
 // Load Styler
 app.use(express.static(path.join(__dirname, 'views', 'class', 'public', 'css', 'styler.css')))
