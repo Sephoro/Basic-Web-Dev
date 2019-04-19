@@ -2,6 +2,8 @@
 
 let path = require('path')
 let express = require('express')
+require('es6-promise').polyfill()
+require('isomorphic-fetch')
 
 let router = express.Router()
 
@@ -49,6 +51,7 @@ router.post('/api/delete', function (req, res) {
     console.log('Out of Bounds')
     res.redirect(req.baseUrl + '/api/list')
   }
+
 })
 
 router.post('/api/edit', function (req, res) {

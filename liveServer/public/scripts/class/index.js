@@ -10,7 +10,7 @@ fetch('/class/api/list')
     data.forEach(function (student) {
       let li = document.createElement('li')
       let liText = document.createTextNode(student.name)
-      li.className += 'student'
+      li.className += 'list-group-item'
 
       li.appendChild(liText)
       classList.appendChild(li)

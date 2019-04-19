@@ -1,0 +1,14 @@
+body {
+	background-color: powderblue;
+
+}
+
+#ddStudentButton{
+	color: blue;
+}
+
+.student {
+	color: red;
+	border: 5px solid black;
+
+}

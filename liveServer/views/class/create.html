@@ -3,20 +3,22 @@
 <head>
     <title>Class List: Create</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <form action="./api/create" method="post">
-    <div>
+     <div class="md-form form-lg">
+     <div style = "position:center; left:80px; top:2px;">
         <label for="Student Name">Name:          </label>
-        <input type="text" id="student" name="student" placeholder="Name"> <br></br>
+        <input type="text" id="student" name="student" placeholder="Name" class="form-control form-control-lg"  style="width: 300px" > <br></br>
         <label for="Student Number">Student Number:</label>
-        <input type="text" id="stNumber" name="stNumber" placeholder="Student Number"><br></br>
+        <input type="text" id="stNumber" name="stNumber" placeholder="Student Number" class="form-control form-control-lg" style="width: 300px"><br></br>
         <label for="Student Courses">Courses:      </label>
-        <input type="text" id="courses" name="courses" placeholder="course1, course2, ...,courseN"><br></br>
+        <input type="text" id="courses" name="courses" placeholder="course1, course2, ...,courseN" class="form-control form-control-lg" style="width: 300px"><br></br>
     </div>
     <div class="button">
-        <button type="submit">Add</button>
+        <button type="submit" class="btn btn-outline-warning">Add</button>
     </div>    
     </form>
 </body>
