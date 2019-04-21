@@ -21,3 +21,4 @@ fetch('/class/api/list')
   }
 
   )
+
